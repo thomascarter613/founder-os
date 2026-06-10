@@ -1,0 +1,478 @@
+{
+  "epics": {
+    "E0": {
+      "number": 1,
+      "title": "E0 \u2014 Product & Architecture Foundation",
+      "url": "https://github.com/thomascarter613/founder-os/issues/1"
+    },
+    "E1": {
+      "number": 6,
+      "title": "E1 \u2014 Repository & Local Development Foundation",
+      "url": "https://github.com/thomascarter613/founder-os/issues/6"
+    },
+    "E10": {
+      "number": 58,
+      "title": "E10 \u2014 Security, RLS, Storage & Auditability",
+      "url": "https://github.com/thomascarter613/founder-os/issues/58"
+    },
+    "E11": {
+      "number": 64,
+      "title": "E11 \u2014 CI, Scripts, Export/Backup & Developer Tooling",
+      "url": "https://github.com/thomascarter613/founder-os/issues/64"
+    },
+    "E12": {
+      "number": 70,
+      "title": "E12 \u2014 Final Integration, Testing & Release Package",
+      "url": "https://github.com/thomascarter613/founder-os/issues/70"
+    },
+    "E2": {
+      "number": 12,
+      "title": "E2 \u2014 Supabase/PostgreSQL Core Schema",
+      "url": "https://github.com/thomascarter613/founder-os/issues/12"
+    },
+    "E3": {
+      "number": 17,
+      "title": "E3 \u2014 Founder Decision Data Model",
+      "url": "https://github.com/thomascarter613/founder-os/issues/17"
+    },
+    "E4": {
+      "number": 23,
+      "title": "E4 \u2014 pgvector Semantic Memory Layer",
+      "url": "https://github.com/thomascarter613/founder-os/issues/23"
+    },
+    "E5": {
+      "number": 28,
+      "title": "E5 \u2014 Optional Qdrant Retrieval Accelerator",
+      "url": "https://github.com/thomascarter613/founder-os/issues/28"
+    },
+    "E6": {
+      "number": 34,
+      "title": "E6 \u2014 Seed Data, Verification & SQL Tests",
+      "url": "https://github.com/thomascarter613/founder-os/issues/34"
+    },
+    "E7": {
+      "number": 40,
+      "title": "E7 \u2014 AI Prompt & Workflow Library",
+      "url": "https://github.com/thomascarter613/founder-os/issues/40"
+    },
+    "E8": {
+      "number": 46,
+      "title": "E8 \u2014 Documentation System",
+      "url": "https://github.com/thomascarter613/founder-os/issues/46"
+    },
+    "E9": {
+      "number": 52,
+      "title": "E9 \u2014 App, Worker & Package Scaffolding",
+      "url": "https://github.com/thomascarter613/founder-os/issues/52"
+    }
+  },
+  "labels": {
+    "area: architecture": true,
+    "area: ci": true,
+    "area: database": true,
+    "area: docs": true,
+    "area: pgvector": true,
+    "area: prompts": true,
+    "area: qdrant": true,
+    "area: scripts": true,
+    "area: security": true,
+    "area: supabase": true,
+    "area: testing": true,
+    "area: web": true,
+    "area: worker": true,
+    "priority: critical": true,
+    "priority: high": true,
+    "priority: low": true,
+    "priority: medium": true,
+    "status: active": true,
+    "status: blocked": true,
+    "status: done": true,
+    "status: ready": true,
+    "status: review": true,
+    "type: epic": true,
+    "type: task": true,
+    "type: work-packet": true
+  },
+  "milestones": {
+    "M0 \u2014 Planning Complete": 1,
+    "M1 \u2014 Runnable Database Foundation": 2,
+    "M2 \u2014 Memory Foundation": 3,
+    "M3 \u2014 Verification Foundation": 4,
+    "M4 \u2014 Productization Foundation": 5,
+    "M5 \u2014 Foundation MVP Release": 6
+  },
+  "work_packets": {
+    "WP-E0-001": {
+      "number": 2,
+      "parent_epic": "E0",
+      "title": "WP-E0-001 \u2014 Define Product Charter",
+      "url": "https://github.com/thomascarter613/founder-os/issues/2"
+    },
+    "WP-E0-002": {
+      "number": 3,
+      "parent_epic": "E0",
+      "title": "WP-E0-002 \u2014 Define Foundation MVP Scope",
+      "url": "https://github.com/thomascarter613/founder-os/issues/3"
+    },
+    "WP-E0-003": {
+      "number": 4,
+      "parent_epic": "E0",
+      "title": "WP-E0-003 \u2014 Record Canonical Architecture Decision",
+      "url": "https://github.com/thomascarter613/founder-os/issues/4"
+    },
+    "WP-E0-004": {
+      "number": 5,
+      "parent_epic": "E0",
+      "title": "WP-E0-004 \u2014 Define Productization Path",
+      "url": "https://github.com/thomascarter613/founder-os/issues/5"
+    },
+    "WP-E1-001": {
+      "number": 7,
+      "parent_epic": "E1",
+      "title": "WP-E1-001 \u2014 Create Repository Skeleton",
+      "url": "https://github.com/thomascarter613/founder-os/issues/7"
+    },
+    "WP-E1-002": {
+      "number": 8,
+      "parent_epic": "E1",
+      "title": "WP-E1-002 \u2014 Add Environment Configuration",
+      "url": "https://github.com/thomascarter613/founder-os/issues/8"
+    },
+    "WP-E1-003": {
+      "number": 9,
+      "parent_epic": "E1",
+      "title": "WP-E1-003 \u2014 Add Docker & Local Services",
+      "url": "https://github.com/thomascarter613/founder-os/issues/9"
+    },
+    "WP-E1-004": {
+      "number": 10,
+      "parent_epic": "E1",
+      "title": "WP-E1-004 \u2014 Add Root Package & TypeScript Config",
+      "url": "https://github.com/thomascarter613/founder-os/issues/10"
+    },
+    "WP-E1-005": {
+      "number": 11,
+      "parent_epic": "E1",
+      "title": "WP-E1-005 \u2014 Add Makefile",
+      "url": "https://github.com/thomascarter613/founder-os/issues/11"
+    },
+    "WP-E10-001": {
+      "number": 59,
+      "parent_epic": "E10",
+      "title": "WP-E10-001 \u2014 Add Storage Buckets and Policies",
+      "url": "https://github.com/thomascarter613/founder-os/issues/59"
+    },
+    "WP-E10-002": {
+      "number": 60,
+      "parent_epic": "E10",
+      "title": "WP-E10-002 \u2014 Add RLS Policies",
+      "url": "https://github.com/thomascarter613/founder-os/issues/60"
+    },
+    "WP-E10-003": {
+      "number": 61,
+      "parent_epic": "E10",
+      "title": "WP-E10-003 \u2014 Add Indexes",
+      "url": "https://github.com/thomascarter613/founder-os/issues/61"
+    },
+    "WP-E10-004": {
+      "number": 62,
+      "parent_epic": "E10",
+      "title": "WP-E10-004 \u2014 Add Views",
+      "url": "https://github.com/thomascarter613/founder-os/issues/62"
+    },
+    "WP-E10-005": {
+      "number": 63,
+      "parent_epic": "E10",
+      "title": "WP-E10-005 \u2014 Add Functions, Triggers, and Audit Events",
+      "url": "https://github.com/thomascarter613/founder-os/issues/63"
+    },
+    "WP-E11-001": {
+      "number": 65,
+      "parent_epic": "E11",
+      "title": "WP-E11-001 \u2014 Add Export and Backup Scripts",
+      "url": "https://github.com/thomascarter613/founder-os/issues/65"
+    },
+    "WP-E11-002": {
+      "number": 66,
+      "parent_epic": "E11",
+      "title": "WP-E11-002 \u2014 Add Type Generation and SQL Lint Scripts",
+      "url": "https://github.com/thomascarter613/founder-os/issues/66"
+    },
+    "WP-E11-003": {
+      "number": 67,
+      "parent_epic": "E11",
+      "title": "WP-E11-003 \u2014 Add JSON Schemas",
+      "url": "https://github.com/thomascarter613/founder-os/issues/67"
+    },
+    "WP-E11-004": {
+      "number": 68,
+      "parent_epic": "E11",
+      "title": "WP-E11-004 \u2014 Add Fixtures",
+      "url": "https://github.com/thomascarter613/founder-os/issues/68"
+    },
+    "WP-E11-005": {
+      "number": 69,
+      "parent_epic": "E11",
+      "title": "WP-E11-005 \u2014 Add GitHub CI",
+      "url": "https://github.com/thomascarter613/founder-os/issues/69"
+    },
+    "WP-E12-001": {
+      "number": 71,
+      "parent_epic": "E12",
+      "title": "WP-E12-001 \u2014 Run Full Local Verification",
+      "url": "https://github.com/thomascarter613/founder-os/issues/71"
+    },
+    "WP-E12-002": {
+      "number": 72,
+      "parent_epic": "E12",
+      "title": "WP-E12-002 \u2014 Fix Migration and Seed Errors",
+      "url": "https://github.com/thomascarter613/founder-os/issues/72"
+    },
+    "WP-E12-003": {
+      "number": 73,
+      "parent_epic": "E12",
+      "title": "WP-E12-003 \u2014 Run Consistency Audit",
+      "url": "https://github.com/thomascarter613/founder-os/issues/73"
+    },
+    "WP-E12-004": {
+      "number": 74,
+      "parent_epic": "E12",
+      "title": "WP-E12-004 \u2014 Produce Final Verification Report",
+      "url": "https://github.com/thomascarter613/founder-os/issues/74"
+    },
+    "WP-E12-005": {
+      "number": 75,
+      "parent_epic": "E12",
+      "title": "WP-E12-005 \u2014 Package Release Artifact",
+      "url": "https://github.com/thomascarter613/founder-os/issues/75"
+    },
+    "WP-E2-001": {
+      "number": 13,
+      "parent_epic": "E2",
+      "title": "WP-E2-001 \u2014 Configure Supabase Project",
+      "url": "https://github.com/thomascarter613/founder-os/issues/13"
+    },
+    "WP-E2-002": {
+      "number": 14,
+      "parent_epic": "E2",
+      "title": "WP-E2-002 \u2014 Create Extensions and Enums Migration",
+      "url": "https://github.com/thomascarter613/founder-os/issues/14"
+    },
+    "WP-E2-003": {
+      "number": 15,
+      "parent_epic": "E2",
+      "title": "WP-E2-003 \u2014 Create Identity and Tenancy Schema",
+      "url": "https://github.com/thomascarter613/founder-os/issues/15"
+    },
+    "WP-E2-004": {
+      "number": 16,
+      "parent_epic": "E2",
+      "title": "WP-E2-004 \u2014 Add Shared Table Conventions",
+      "url": "https://github.com/thomascarter613/founder-os/issues/16"
+    },
+    "WP-E3-001": {
+      "number": 18,
+      "parent_epic": "E3",
+      "title": "WP-E3-001 \u2014 Founder Core Tables",
+      "url": "https://github.com/thomascarter613/founder-os/issues/18"
+    },
+    "WP-E3-002": {
+      "number": 19,
+      "parent_epic": "E3",
+      "title": "WP-E3-002 \u2014 Business Ideation Core Tables",
+      "url": "https://github.com/thomascarter613/founder-os/issues/19"
+    },
+    "WP-E3-003": {
+      "number": 20,
+      "parent_epic": "E3",
+      "title": "WP-E3-003 \u2014 Assumptions, Evidence, and Experiments",
+      "url": "https://github.com/thomascarter613/founder-os/issues/20"
+    },
+    "WP-E3-004": {
+      "number": 21,
+      "parent_epic": "E3",
+      "title": "WP-E3-004 \u2014 Decisions, Reviews, Risks, and Pivots",
+      "url": "https://github.com/thomascarter613/founder-os/issues/21"
+    },
+    "WP-E3-005": {
+      "number": 22,
+      "parent_epic": "E3",
+      "title": "WP-E3-005 \u2014 Scorecards, Tasks, Tags, and Linking",
+      "url": "https://github.com/thomascarter613/founder-os/issues/22"
+    },
+    "WP-E4-001": {
+      "number": 24,
+      "parent_epic": "E4",
+      "title": "WP-E4-001 \u2014 Create Memory Schema",
+      "url": "https://github.com/thomascarter613/founder-os/issues/24"
+    },
+    "WP-E4-002": {
+      "number": 25,
+      "parent_epic": "E4",
+      "title": "WP-E4-002 \u2014 Add Memory Indexes and Search",
+      "url": "https://github.com/thomascarter613/founder-os/issues/25"
+    },
+    "WP-E4-003": {
+      "number": 26,
+      "parent_epic": "E4",
+      "title": "WP-E4-003 \u2014 Add Embedding Scripts",
+      "url": "https://github.com/thomascarter613/founder-os/issues/26"
+    },
+    "WP-E4-004": {
+      "number": 27,
+      "parent_epic": "E4",
+      "title": "WP-E4-004 \u2014 Add Memory Tests",
+      "url": "https://github.com/thomascarter613/founder-os/issues/27"
+    },
+    "WP-E5-001": {
+      "number": 29,
+      "parent_epic": "E5",
+      "title": "WP-E5-001 \u2014 Add Qdrant Sync Tables",
+      "url": "https://github.com/thomascarter613/founder-os/issues/29"
+    },
+    "WP-E5-002": {
+      "number": 30,
+      "parent_epic": "E5",
+      "title": "WP-E5-002 \u2014 Add Optional Qdrant Runtime",
+      "url": "https://github.com/thomascarter613/founder-os/issues/30"
+    },
+    "WP-E5-003": {
+      "number": 31,
+      "parent_epic": "E5",
+      "title": "WP-E5-003 \u2014 Add Qdrant Scripts",
+      "url": "https://github.com/thomascarter613/founder-os/issues/31"
+    },
+    "WP-E5-004": {
+      "number": 32,
+      "parent_epic": "E5",
+      "title": "WP-E5-004 \u2014 Add Qdrant Worker Scaffold",
+      "url": "https://github.com/thomascarter613/founder-os/issues/32"
+    },
+    "WP-E5-005": {
+      "number": 33,
+      "parent_epic": "E5",
+      "title": "WP-E5-005 \u2014 Add Qdrant Tests",
+      "url": "https://github.com/thomascarter613/founder-os/issues/33"
+    },
+    "WP-E6-001": {
+      "number": 35,
+      "parent_epic": "E6",
+      "title": "WP-E6-001 \u2014 Create Seed Data",
+      "url": "https://github.com/thomascarter613/founder-os/issues/35"
+    },
+    "WP-E6-002": {
+      "number": 36,
+      "parent_epic": "E6",
+      "title": "WP-E6-002 \u2014 Create Verification SQL",
+      "url": "https://github.com/thomascarter613/founder-os/issues/36"
+    },
+    "WP-E6-003": {
+      "number": 37,
+      "parent_epic": "E6",
+      "title": "WP-E6-003 \u2014 Create Supabase SQL Tests",
+      "url": "https://github.com/thomascarter613/founder-os/issues/37"
+    },
+    "WP-E6-004": {
+      "number": 38,
+      "parent_epic": "E6",
+      "title": "WP-E6-004 \u2014 Add Smoke Tests",
+      "url": "https://github.com/thomascarter613/founder-os/issues/38"
+    },
+    "WP-E6-005": {
+      "number": 39,
+      "parent_epic": "E6",
+      "title": "WP-E6-005 \u2014 Add Verification Scripts",
+      "url": "https://github.com/thomascarter613/founder-os/issues/39"
+    },
+    "WP-E7-001": {
+      "number": 41,
+      "parent_epic": "E7",
+      "title": "WP-E7-001 \u2014 Create System Prompt Library",
+      "url": "https://github.com/thomascarter613/founder-os/issues/41"
+    },
+    "WP-E7-002": {
+      "number": 42,
+      "parent_epic": "E7",
+      "title": "WP-E7-002 \u2014 Create Research Prompt Library",
+      "url": "https://github.com/thomascarter613/founder-os/issues/42"
+    },
+    "WP-E7-003": {
+      "number": 43,
+      "parent_epic": "E7",
+      "title": "WP-E7-003 \u2014 Create Scoring Prompt Library",
+      "url": "https://github.com/thomascarter613/founder-os/issues/43"
+    },
+    "WP-E7-004": {
+      "number": 44,
+      "parent_epic": "E7",
+      "title": "WP-E7-004 \u2014 Create Decision and Assumption Prompt Library",
+      "url": "https://github.com/thomascarter613/founder-os/issues/44"
+    },
+    "WP-E7-005": {
+      "number": 45,
+      "parent_epic": "E7",
+      "title": "WP-E7-005 \u2014 Create Evidence, Experiment, Review, and Memory Prompts",
+      "url": "https://github.com/thomascarter613/founder-os/issues/45"
+    },
+    "WP-E8-001": {
+      "number": 47,
+      "parent_epic": "E8",
+      "title": "WP-E8-001 \u2014 Architecture Docs",
+      "url": "https://github.com/thomascarter613/founder-os/issues/47"
+    },
+    "WP-E8-002": {
+      "number": 48,
+      "parent_epic": "E8",
+      "title": "WP-E8-002 \u2014 Product Docs",
+      "url": "https://github.com/thomascarter613/founder-os/issues/48"
+    },
+    "WP-E8-003": {
+      "number": 49,
+      "parent_epic": "E8",
+      "title": "WP-E8-003 \u2014 Data Model Docs",
+      "url": "https://github.com/thomascarter613/founder-os/issues/49"
+    },
+    "WP-E8-004": {
+      "number": 50,
+      "parent_epic": "E8",
+      "title": "WP-E8-004 \u2014 Operating System Docs",
+      "url": "https://github.com/thomascarter613/founder-os/issues/50"
+    },
+    "WP-E8-005": {
+      "number": 51,
+      "parent_epic": "E8",
+      "title": "WP-E8-005 \u2014 Founder, Reports, and Troubleshooting Docs",
+      "url": "https://github.com/thomascarter613/founder-os/issues/51"
+    },
+    "WP-E9-001": {
+      "number": 53,
+      "parent_epic": "E9",
+      "title": "WP-E9-001 \u2014 Create DB Package",
+      "url": "https://github.com/thomascarter613/founder-os/issues/53"
+    },
+    "WP-E9-002": {
+      "number": 54,
+      "parent_epic": "E9",
+      "title": "WP-E9-002 \u2014 Create AI Package",
+      "url": "https://github.com/thomascarter613/founder-os/issues/54"
+    },
+    "WP-E9-003": {
+      "number": 55,
+      "parent_epic": "E9",
+      "title": "WP-E9-003 \u2014 Create Shared Package",
+      "url": "https://github.com/thomascarter613/founder-os/issues/55"
+    },
+    "WP-E9-004": {
+      "number": 56,
+      "parent_epic": "E9",
+      "title": "WP-E9-004 \u2014 Create Web App Scaffold",
+      "url": "https://github.com/thomascarter613/founder-os/issues/56"
+    },
+    "WP-E9-005": {
+      "number": 57,
+      "parent_epic": "E9",
+      "title": "WP-E9-005 \u2014 Create Worker App Scaffold",
+      "url": "https://github.com/thomascarter613/founder-os/issues/57"
+    }
+  }
+}
