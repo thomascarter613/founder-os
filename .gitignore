@@ -1,0 +1,33 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Node and package managers
+node_modules/
+npm-debug.log*
+pnpm-lock.yaml
+yarn.lock
+
+# Build output
+dist/
+build/
+coverage/
+.turbo/
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Editor files
+.idea/
+.vscode/
+
+# Supabase local state
+.supabase/
